@@ -1,0 +1,18 @@
+         Prefix Verb   URI Pattern                                        Controller#Action
+user_game_steps GET    /users/:user_id/games/:game_id/steps(.:format)     steps#index
+                POST   /users/:user_id/games/:game_id/steps(.:format)     steps#create
+ user_game_step GET    /users/:user_id/games/:game_id/steps/:id(.:format) steps#show
+                PATCH  /users/:user_id/games/:game_id/steps/:id(.:format) steps#update
+                PUT    /users/:user_id/games/:game_id/steps/:id(.:format) steps#update
+                DELETE /users/:user_id/games/:game_id/steps/:id(.:format) steps#destroy
+     user_games GET    /users/:user_id/games(.:format)                    games#index
+                POST   /users/:user_id/games(.:format)                    games#create
+      user_game GET    /users/:user_id/games/:id(.:format)                games#show
+                PATCH  /users/:user_id/games/:id(.:format)                games#update
+                PUT    /users/:user_id/games/:id(.:format)                games#update
+                DELETE /users/:user_id/games/:id(.:format)                games#destroy
+          users POST   /users(.:format)                                   users#create
+           user GET    /users/:id(.:format)                               users#show
+                PATCH  /users/:id(.:format)                               users#update
+                PUT    /users/:id(.:format)                               users#update
+                DELETE /users/:id(.:format)                               users#destroy
