@@ -9,7 +9,7 @@
 
 User.create(
   name: 'Sarah',
-  email: 'sarah@sarah.com'
+  email: 'sarah@sarah.com',
   password_hash: 'sarah'
   )
 
@@ -29,7 +29,7 @@ Game.create(
 Step.create(
   longitude: '37.784985', 
   latitude: '-122.398508', 
-  type: 'clue', 
+  clue_type: 'clue', 
   icon: 'clue',
   description: 'The treasure you seek lies across the street... in an underwater bed that is actually just a building... Walk across the street, for real.',
   game_id: 1
@@ -38,7 +38,7 @@ Step.create(
 Step.create(
   longitude: '37.783672',
   latitude: '-122.398813',
-  type: 'treasure',
+  clue_type: 'treasure',
   icon: 'sock', 
   description: 'Yay!! You found my dirty sock in your tikka masala wrap! I\'ve been looking for that for days!',
   game_id: 1
