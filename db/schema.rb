@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20160904002703) do
   end
 
   create_table "steps", force: :cascade do |t|
+    t.string   "name"
     t.string   "longitude"
     t.string   "latitude"
     t.string   "clue_type"
